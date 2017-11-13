@@ -16,6 +16,7 @@ apps=(
   zsh
   zsh-syntax-highlighting
   tree
+  pyenv
 )
 
 brew install "${apps[@]}"
