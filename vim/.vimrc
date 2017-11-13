@@ -9,7 +9,6 @@ endif
 
 call plug#begin('~/.vim/bundle')
 
-Plug 'kien/ctrlp.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'chrisbra/csv.vim'
 Plug 'hynek/vim-python-pep8-indent'
@@ -20,11 +19,14 @@ Plug 'shougo/neocomplete.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'craigemery/vim-autotag'
 Plug 'alfredodeza/pytest.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 call plug#end()
 
 set title
 set encoding=utf-8
+set ignorecase
+set smartcase
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
@@ -33,13 +35,32 @@ set clipboard=unnamed
 set directory=$HOME/.vim/tmp/
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set list
+set wildignore+=*/tmp/*,*/build/*,*.so,*.swp,*.zip,*.pyc
 
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_list_hide=".DS_Store,.Trash,^\.git/$"
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
+nmap ,cs :let @*=expand("%")<CR>
+nmap ,cl :let @*=expand("%:p")<CR>
+nmap <C-P> :FZF<CR>
 colo seoul256
+
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
 
 " allow backspacing over everything in insert mode
 "set backspace=indent,eol,start
