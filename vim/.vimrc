@@ -42,13 +42,6 @@ let g:netrw_list_hide=".DS_Store,.Trash,^\.git/$"
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 
-" let g:UltiSnipsExpandTrigger="<tab>"
-" let g:UltiSnipsJumpForwardTrigger="<c-b>"
-" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
-" If you want :UltiSnipsEdit to split your window.
-" let g:UltiSnipsEditSplit="vertical"
-
 nmap ,cs :let @*=expand("%")<CR>
 nmap ,cl :let @*=expand("%:p")<CR>
 nmap <C-P> :FZF<CR>
