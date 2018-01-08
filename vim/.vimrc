@@ -32,7 +32,7 @@ set softtabstop=2
 set nu
 set clipboard=unnamed
 set directory=$HOME/.vim/tmp/
-set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,nbsp:␣,tab:▸␣
 set list
 set wildignore+=*/tmp/*,*/build/*,*.so,*.swp,*.zip,*.pyc
 
