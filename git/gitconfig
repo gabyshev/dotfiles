@@ -1,0 +1,6 @@
+[user]
+	name = Simon Gabyshev
+	email = gabyshev.sa@gmail.com
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore

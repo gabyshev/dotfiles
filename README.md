@@ -1,6 +1,6 @@
 # Dotfiles
 
-My collection of dotfiles.
+My collection of dotfiles. Kudos to @mistadikay
 
 ## Install
 

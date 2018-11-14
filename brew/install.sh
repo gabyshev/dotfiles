@@ -17,6 +17,12 @@ apps=(
   zsh-syntax-highlighting
   tree
   pyenv
+  ctags
+  curl
+  kubectx
+  ranger
+  htop
+  fzf
 )
 
 brew install "${apps[@]}"
