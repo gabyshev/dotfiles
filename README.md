@@ -1,6 +1,6 @@
 # Dotfiles
 
-My collection of dotfiles. Kudos to @mistadikay
+My collection of dotfiles. Kudos to [@mistadikay](http://github.com/mistadikay)
 
 ## Install
 
