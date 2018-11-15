@@ -7,7 +7,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 	autocmd VimEnter * PlugInstall
 endif
 
-call plug#begin('~/.vim/bundle')
+call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/seoul256.vim'
 Plug 'hynek/vim-python-pep8-indent'
