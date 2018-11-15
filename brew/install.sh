@@ -23,6 +23,7 @@ apps=(
   ranger
   htop
   fzf
+  vim
 )
 
 brew install "${apps[@]}"
