@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/user/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -84,7 +84,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #source <(kubectl completion zsh)
 
 #golang
-export GOPATH=~/work/go
+export GOPATH=~/go
 export PATH=$PATH:/opt/local/bin/:$GOPATH/bin
 export GOBIN=$GOPATH/bin
 
