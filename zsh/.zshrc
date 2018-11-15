@@ -79,9 +79,9 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias k="kubectl"
+alias kns="kubens"
 eval "$(pyenv init -)"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#source <(kubectl completion zsh)
 
 #golang
 export GOPATH=~/go

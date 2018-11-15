@@ -7,6 +7,11 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 	autocmd VimEnter * PlugInstall
 endif
 
+
+if empty(glob('~/.vim/tmp'))
+    silent !mkdir -p ~/.vim/tmp
+endif
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/seoul256.vim'
