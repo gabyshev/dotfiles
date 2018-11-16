@@ -8,24 +8,16 @@ then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+src="$HOME/.dotfiles/brew"
+
 brew update
 brew upgrade
 
-apps=(
-  git
-  zsh
-  zsh-syntax-highlighting
-  tree
-  pyenv
-  ctags
-  curl
-  kubectx
-  ranger
-  htop
-  fzf
-  vim
-)
+echo "Restoring from bundle"
 
-brew install "${apps[@]}"
+cd "$src"
+brew bundle --force
 
 brew cleanup
+
+printf "\n"
