@@ -15,7 +15,7 @@ brew "pyenv"
 brew "ranger"
 brew "the_silver_searcher"
 brew "tree"
-brew "vim"
+brew "vim", args: ["with-lua"]
 brew "zsh"
 brew "zsh-syntax-highlighting"
 cask "font-source-code-pro"
