@@ -19,7 +19,9 @@ Plug 'hynek/vim-python-pep8-indent'
 Plug 'nvie/vim-flake8'
 Plug 'fatih/vim-go'
 Plug 'majutsushi/tagbar'
-Plug 'shougo/neocomplete.vim'
+Plug 'Shougo/deoplete.vim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'vim-airline/vim-airline'
 Plug 'craigemery/vim-autotag'
 Plug 'alfredodeza/pytest.vim'
@@ -44,8 +46,7 @@ set wildignore+=*/tmp/*,*/build/*,*.so,*.swp,*.zip,*.pyc
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_list_hide=".DS_Store,.Trash,^\.git/$"
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
+let g:deoplete#enable_at_startup = 1
 
 nmap ,cs :let @*=expand("%")<CR>
 nmap ,cl :let @*=expand("%:p")<CR>
