@@ -2,5 +2,5 @@
 	name = Simon Gabyshev
 	email = gabyshev.sa@gmail.com
 [core]
-	editor = vim
+	editor = nvim
 	excludesfile = ~/.gitignore
