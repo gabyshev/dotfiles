@@ -81,6 +81,7 @@ export LANG="en_US.UTF-8"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias k="kubectl"
 alias kns="kubens"
+alias vim="nvim"
 eval "$(pyenv init -)"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

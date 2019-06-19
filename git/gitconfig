@@ -4,3 +4,4 @@
 [core]
 	editor = nvim
 	excludesfile = ~/.gitignore
+	compression = 0
