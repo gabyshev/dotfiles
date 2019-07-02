@@ -43,6 +43,8 @@ set list
 set wildignore+=*/tmp/*,*/build/*,*.so,*.swp,*.zip,*.pyc
 set completeopt+=noinsert
 set completeopt+=noselect
+set cursorcolumn
+set cursorline
 
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
